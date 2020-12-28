@@ -1,0 +1,71 @@
+.heroSection {
+  // height: 70vh;
+  position: relative;
+
+  .heroGrid {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+
+    &Intro {
+      display: grid;
+      place-content: center;
+      padding: 30px;
+      margin-left: 10px;
+      flex-basis: 50%;
+
+      @media (max-width: 768px) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &Image {
+      animation: fadeIn 2.2s ease-in;
+      border-radius: 20px;
+
+      img {
+        width: 95%;
+        height: 70%;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.homeCarousel {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.heroWelcome {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  z-index: 10000000;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  right: 5%;
+}
+
+.work {
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

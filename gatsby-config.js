@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Magis Let`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@Elie Mugenzi`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,5 +30,17 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require("tailwindcss")],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
   ],
 }
