@@ -1,5 +1,5 @@
 import React from "react"
-import { Button, Layout as Gridlayout } from "element-react"
+import { Button, Layout as GridLayout } from "element-react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -31,18 +31,18 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <section className={styles.heroSection}>
-        <div className="mx-10">
+        <div className="mx-10 sm:mx-5 md:mx-5">
           <section className={styles.heroGrid}>
             <div className={styles.heroGridIntro}>
               <h3 className="font-bold">Welcome to Magis.</h3>
-              <p className="my-5 mr-20">
+              <p className="my-5 mr-10 sm:mr-0 sm:my-2 md:mr-10">
                 We aim at adding a modern and digital touch in homes, workplaces
                 and daily lives of the local and regional community by valuing
                 affordability and adaptability.
               </p>
               <div>
                 <Button type="primary" className="button-primary my-5">
-                  Explore Our Work
+                  Explore our work
                 </Button>
               </div>
             </div>
@@ -57,45 +57,45 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="mx-10 my-20">
-        <Gridlayout.Row gutter="20">
-          <Gridlayout.Col span="12" offset="8">
+        <GridLayout.Row gutter="20">
+          <GridLayout.Col span="12" offset="8">
             <Title text="Our Work" />
-          </Gridlayout.Col>
-        </Gridlayout.Row>
-        <Gridlayout.Row gutter="20" justify="center" className="mx-10">
-          <Gridlayout.Col sm={8} lg={8} md={8} span="10">
+          </GridLayout.Col>
+        </GridLayout.Row>
+        <GridLayout.Row gutter="10" className="mx-10">
+          <GridLayout.Col sm={12} lg={8} md={6} xs={8} span="10">
             <Work
               title="Magis MotherBoard M1"
               description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month. "
               cover="https://cdn.pixabay.com/photo/2014/09/20/13/52/board-453758__480.jpg"
               category="Electronics"
             />
-          </Gridlayout.Col>
-          <Gridlayout.Col sm={8} md={8} lg={8} span="10">
+          </GridLayout.Col>
+          <GridLayout.Col sm={12} md={6} lg={8} xs={8} span="10">
             <Work
               title="Kasha new Office"
               description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month. "
               cover="https://cdn.pixabay.com/photo/2016/02/19/11/36/canal-1209808__480.jpg"
               category="Architecture"
             />
-          </Gridlayout.Col>
-          <Gridlayout.Col sm={8} md={8} lg={8} span="10">
+          </GridLayout.Col>
+          <GridLayout.Col sm={12} md={6} lg={8} xs={8} span="10">
             <Work
               title="ACME web solutions"
               description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month."
               cover="https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427__480.jpg"
               category="Information Technology"
             />
-          </Gridlayout.Col>
-          <Gridlayout.Col sm={8} md={8} lg={8} span="10">
+          </GridLayout.Col>
+          <GridLayout.Col sm={12} md={6} lg={8} xs={8} span="10">
             <Work
               title="Kasha new Office"
               description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month."
               cover="https://cdn.pixabay.com/photo/2016/02/19/11/36/canal-1209808__480.jpg"
               category="Architecture"
             />
-          </Gridlayout.Col>
-        </Gridlayout.Row>
+          </GridLayout.Col>
+        </GridLayout.Row>
       </section>
       <style jsx="true">
         {`
