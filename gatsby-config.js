@@ -42,5 +42,8 @@ module.exports = {
         implementation: require("sass"),
       },
     },
+    {
+      resolve: `gatsby-plugin-use-query-params`,
+    },
   ],
 }
