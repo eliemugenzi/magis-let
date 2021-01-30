@@ -62,40 +62,30 @@ const IndexPage = () => {
             <Title text="Our Work" />
           </GridLayout.Col>
         </GridLayout.Row>
-        <GridLayout.Row gutter="10" className="mx-10">
-          <GridLayout.Col sm={12} lg={8} md={6} xs={8} span="10">
-            <Work
-              title="Magis MotherBoard M1"
-              description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month. "
-              cover="https://cdn.pixabay.com/photo/2014/09/20/13/52/board-453758__480.jpg"
-              category="Electronics"
-            />
-          </GridLayout.Col>
-          <GridLayout.Col sm={12} md={6} lg={8} xs={8} span="10">
-            <Work
-              title="Kasha new Office"
-              description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month. "
-              cover="https://cdn.pixabay.com/photo/2016/02/19/11/36/canal-1209808__480.jpg"
-              category="Architecture"
-            />
-          </GridLayout.Col>
-          <GridLayout.Col sm={12} md={6} lg={8} xs={8} span="10">
-            <Work
-              title="ACME web solutions"
-              description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month."
-              cover="https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427__480.jpg"
-              category="Information Technology"
-            />
-          </GridLayout.Col>
-          <GridLayout.Col sm={12} md={6} lg={8} xs={8} span="10">
-            <Work
-              title="Kasha new Office"
-              description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month."
-              cover="https://cdn.pixabay.com/photo/2016/02/19/11/36/canal-1209808__480.jpg"
-              category="Architecture"
-            />
-          </GridLayout.Col>
-        </GridLayout.Row>
+        <Work
+          title="Magis MotherBoard M1"
+          description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month. "
+          cover="https://cdn.pixabay.com/photo/2014/09/20/13/52/board-453758__480.jpg"
+          category="Electronics"
+        />
+        <Work
+          title="Kasha new Office"
+          description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month. "
+          cover="https://cdn.pixabay.com/photo/2016/02/19/11/36/canal-1209808__480.jpg"
+          category="Architecture"
+        />
+        <Work
+          title="ACME web solutions"
+          description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month."
+          cover="https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427__480.jpg"
+          category="Information Technology"
+        />
+        <Work
+          title="Kasha new Office"
+          description="As the days went by, we noticed he didn’t get any better and due to the severity of the issue he was hospitalized last month."
+          cover="https://cdn.pixabay.com/photo/2016/02/19/11/36/canal-1209808__480.jpg"
+          category="Architecture"
+        />
       </section>
       <style jsx="true">
         {`

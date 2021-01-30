@@ -8,12 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import AOS from "aos"
 
 import Header from "./header"
 import "./layout.css"
-
-AOS.init()
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

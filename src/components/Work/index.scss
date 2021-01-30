@@ -1,0 +1,23 @@
+.workItem {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 30px auto;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}

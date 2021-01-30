@@ -28,13 +28,17 @@ const MobileHeader = () => {
               menu={
                 <Dropdown.Menu>
                   <Dropdown.Item>
-                    <Link to="/work?category=architecture">Architecture</Link>
+                    <Link to="/projects?category=architecture">
+                      Architecture
+                    </Link>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="/work?category=electronics">Electronics</Link>
+                    <Link to="/projects?category=electronics">Electronics</Link>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="/work?category=information-technology">IT</Link>
+                    <Link to="/projects?category=information-technology">
+                      IT
+                    </Link>
                   </Dropdown.Item>
                 </Dropdown.Menu>
               }
@@ -88,11 +92,15 @@ const Header = ({ siteTitle }) => {
         </Menu.Item>
         <Menu.SubMenu index="/work" title="Work">
           <Menu.Item index="/work?category=architecture">
-            Architecture
+            <Link to="/projects?category=architecture">Architecture</Link>
           </Menu.Item>
-          <Menu.Item index="/work?category=electronics">Electronics</Menu.Item>
+          <Menu.Item index="/work?category=electronics">
+            <Link to="/projects?category=electronics">Electronics</Link>
+          </Menu.Item>
           <Menu.Item index="/work?category=information-technology">
-            Information Technology
+            <Link to="/projects?category=information-technology">
+              Information Technology
+            </Link>
           </Menu.Item>
         </Menu.SubMenu>
         <Menu.Item index="/about">
@@ -141,8 +149,6 @@ Header.defaultProps = {
 
 export default () => {
   const isMobile = useMedia("(max-width:768px)")
-
-  console.log("IS MOOO", isMobile)
 
   return isMobile ? <MobileHeader /> : <Header />
 }

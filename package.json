@@ -8,7 +8,6 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
-    "aos": "^2.3.4",
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
     "gatsby": "^2.26.1",
@@ -19,14 +18,17 @@
     "gatsby-plugin-react-helmet": "^3.4.0",
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-transformer-sharp": "^2.6.0",
+    "lodash": "^4.17.20",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-use": "^15.3.4",
-    "sass": "^1.30.0"
+    "sass": "^1.30.0",
+    "use-query-params": "^1.1.9"
   },
   "devDependencies": {
     "postcss": "^8.2.1",
